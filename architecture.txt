@@ -1,0 +1,16 @@
+spotify-mixer/
+│
+├── backend/
+│   ├── config/
+│   │   └── logger.js            # Winston-based logging configuration
+│   │
+│   ├── routes/
+│   │   └── spotifyRoutes.js     # Express routes for Spotify login and callback
+│   │
+│   ├── services/
+│   │   └── spotifyService.js    # Spotify API initialization and token management
+│   │
+│   ├── server.js                # Main entry point for the backend
+│   └── .env                     # Environment variables for the backend
+│
+└── (future files for frontend development, if needed)
