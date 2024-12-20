@@ -1,0 +1,109 @@
+.options-wrapper {
+  margin-top: 7%;
+  height: 33%;
+  width: 270px; /* Fixed width for the options section */
+  background-color: #172135; /* Dark grey background */
+  color: white; /* White text */
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Shadow on the left */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px; /* Fixed width for the wrapper */
+  justify-content: flex-start; /* Align to the top */
+}
+
+
+.options-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 3px solid #fff; /* White underline */
+}
+
+.options-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+ 
+}
+
+.options-item {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.options-section {
+  width: 100%; /* Default width */
+  max-width: 250px; /* Prevents it from growing too wide */
+  background-color: #1e1e1e; /* Dark grey background */
+  color: white;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Shadow on the left */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers buttons and content */
+  border-style: solid;
+  border-color: #1db954;
+  border-radius: 40px;
+}
+
+
+.options-button {
+  width: 100%;
+  background-color: #1ed760; /* Spotify green */
+  color: black;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 200px; /* Set a maximum width for large screens */
+}
+
+.options-button:hover {
+  background-color: #1db954; /* Slightly darker green on hover */
+}
+
+.options-item.selected {
+  background-color: #1ed760; /* Spotify green for selected */
+  color: black; /* Black text for contrast */
+}
+
+.options-button.selected {
+  background-color: #444; /* Darker background when selected */
+  color: white; /* White text for contrast */
+}
+
+
+.run-button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: #fff;
+  background-color: #15883e;
+  height: 48px;
+
+  margin-top: 15%;
+  align-items: center;
+}
+
+.run-button:hover {
+  background-color: #1db954; /* Slightly darker red on hover */
+}
+
+

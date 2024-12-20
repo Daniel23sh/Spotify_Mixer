@@ -1,38 +1,69 @@
-.App {
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	line-height:1.5;
+	font-size:1em;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background-color: #172135; /* Blue background */
+}
+
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  font-family: cursive;
+ 
+  font-style: italic;
+  background-color: black; /* Darker blue for the header */
+  color: green;
+  padding: 20px;
+  font-size: 2.3rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.app-body {
+  display: flex; /* Enables a side-by-side layout for child elements */
+  flex: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar {
+  width: 270px; /* Sidebar has a fixed width */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+.main-section {
+  flex: 1; /* Fills the remaining space */
   color: white;
+  padding-top: 20px;
+  min-height: 100%; /* Ensures it matches the parent's height */
+  max-width: 1200px; /* Prevents the section from growing beyond 1200px */
+  margin: 0 auto; /* Centers the content on larger screens */
+  background-color: #172135;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.main-content {
+  width: 63%;
+  padding: 20px;
+  background-color: #172135; /* Light grey for main content */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.options-wrapper{
+  background-color: #172135;
+ 
 }

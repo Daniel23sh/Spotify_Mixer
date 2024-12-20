@@ -1,0 +1,128 @@
+.sidebar {
+  width: 270px;
+  background-color: #111; /* Black background */
+  color: white;
+  height: 100%;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.main-icon{
+  margin-right: 15px;
+
+}
+.library-icon {
+  margin-right: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 20px 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+li:hover {
+  color: #1ed760; /* Spotify green */
+}
+
+.icon {
+  margin-right: 15px;
+  font-size: 1.3rem; /* Icon size */
+}
+
+span {
+  font-size: 1.3rem; /* Text size */
+}
+
+
+.input {
+	
+	position:relative;
+	
+
+	font-size: 1.5em;
+	
+
+	background: linear-gradient(21deg, #1db954, #15883e);
+	
+
+	padding: 3px;
+	
+	
+	display: inline-block;
+	
+	
+	border-radius: 9999em;
+	transform: scale(.993, .94);
+
+	*:not(span) {
+		position: relative;
+		display: inherit;
+		border-radius: inherit;
+		margin: 0;
+		border: none;
+		outline: none;
+		padding: 0 .325em;
+		z-index: 1; 
+		
+		
+		&:focus + span {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+	
+	
+	span {
+		
+		transform: scale(.993, .94);
+		transition: transform .5s, opacity .25s;
+		opacity: 0;
+		
+		position:absolute;
+		z-index: 0; 
+		margin:4px;
+		left:0;
+		top:0;
+		right:0;
+		bottom:0;
+		border-radius: inherit;
+		pointer-events: none; 
+		
+
+		box-shadow: inset 0 0 0 3px #fff,
+			0 0 0 4px #fff,
+			3px -3px 30px #1beabd, 
+			-3px 3px 30px #10abff;
+	}
+	
+}
+
+input {
+  font-size: 0.7em;
+	font-family: inherit;
+	line-height:inherit;
+	color:#2e3750;
+	min-width:12em;
+  height: 40px;
+  background-color: transparent;
+}
+
+::placeholder {
+	color:black;
+}
